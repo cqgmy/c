@@ -1,7 +1,8 @@
 #include <stdio.h>
-
 int main(){
-  printf("My name is Ania.\n");
-  printf("I like sailing.");
+  int favNo;
+  printf("Please type your favourite number: \n");
+  scanf("%d", &favNo);
+  printf("Your favourite number is: %d", favNo);
   return 0;
 }
