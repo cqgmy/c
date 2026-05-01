@@ -1,8 +1,16 @@
 #include <stdio.h>
+
 int main(){
-  int favNo;
-  printf("Please type your favourite number: \n");
-  scanf("%d", &favNo);
-  printf("Your favourite number is: %d", favNo);
+  int currYr;
+  int birthYr;
+  int age;
+  //simpler: int currYr, birthYr, age//
+  printf("Please type the current year: ");
+  scanf("%d", &currYr);
+  printf("Please type your birth year: ");
+  scanf("%d", &birthYr);
+  age = currYr - birthYr;
+  printf("You are %d years old", age);
+  
   return 0;
 }
