@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(){
+  int myScore, maxScore;
+  float percentScore;
+  printf("Please type your score; \n");
+  scanf("%d", &myScore);
+  printf("Please type maximum score: \n");
+  scanf("%d", &maxScore);
+  percentScore = 100.0*myScore/maxScore;
+  /* the reason for 100.0 is that when c sees
+  that one of the numbers is a float, the entire
+  calculation is upgraded to float, so no decimals
+  are lost*/
+  printf("You scored %.2f percent", percentScore);
+  //%.2f used to limit output to 2 decimal places//
+  return 0;
+}
